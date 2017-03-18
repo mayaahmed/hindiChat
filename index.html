@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+ <html lang="en">
+     <head>
+         <meta charset="utf-8">
+<title>Punjiri: Web and Mobile Technologies.</title>
+  <link rel="stylesheet" type="text/css"  href="keyboard.css">
+    <link rel="stylesheet" type="text/css"  href="chat.css">
+<link rel="stylesheet" type="text/css"  href="punjiriIcon.css">   
+<style>
+
+
+
+</style>
+
+     </head>
+     <body>
+ 
+       <div class="wrapper">
+
+         <div id="topStuff">
+           <header id="top_header">
+             <img id="iconpic" src="punjiri.png"  height=110 width=110 alt="Logo"> 
+             <div id="titleTextdiv"> 
+               Chat India
+             </div> 
+	   </header>
+	 </div>
+             
+	<div class="main">
+    	   <div id="idDiv" class="board">
+             <h3>  Enter Username </h3>
+             <form id="id-form">
+	       <input  id="nameInput" class="input" /> <br/>
+	       <input type="submit" class="submitButton"  id="idSubmitButton" value ="Login" /> 
+             </form>
+           </div>
+        
+	   <div id="chat-controls" class="board">
+	     
+	     <div id="chatDiv"> 
+	       <div id="displayDiv" > <p id="headUsers"> Online Users </p>
+	       <div id="usersDiv"> </div> 
+	       </div>
+	       <div  id="chat">  </div>
+	     </div>
+	     
+	     <form id="messageForm">
+	       <textarea rows="4" cols="80" id="message" class="input" >Enter Message </textarea>
+	       <br/>
+	     <input type="submit"  class="submitButton" id="messageButton" value ="Send Message" /> 
+	     </form> 
+              
+
+	     <div class="main_panel">
+	       <!-- numerals -->
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2406;');">&#2406; </div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2407;');">&#2407;</div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2408;');"> &#2408;</div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2409;');">&#2409; </div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2410;');"> &#2410;</div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2411;');"> &#2411;</div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2412;');">&#2412; </div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2413;');">&#2413; </div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2414');">&#2414;</div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2415;');">&#2415;</div>
+	      
+
+	       <!-- Additions -->
+	       <div class="keyboard_button"   onclick="alphabet_write('&#2381;');"> &#2381;</div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2366;');">&#2366;</div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2368;');"> &#2368;</div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2367;');">&#2367;</div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2369;');">&#2369; </div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2370;');">&#2370; </div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2375;');">&#2375; </div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2376;');">&#2376; </div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2379;');">&#2379; </div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2380;');">&#2380; </div>
+	       <div class="keyboard_button"   onclick="alphabet_write('&#2306;');">&#2306; </div>
+	       <div class="keyboard_button" onclick="alphabet_write('&#2307');">&#2307;</div>
+	       <div class="keyboard_button"   onclick="alphabet_write('&#2305;');">&#2305; </div>
+
+	       <!-- Akshar -->
+	       <div class="keyboard_button"  id="aaa" onclick="alphabet_write('&#2309');">&#2309;</div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2311;');">&#2311;</div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2312;');"> &#2312;</div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2313;');">&#2313; </div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2314;');"> &#2314;</div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2319;');">&#2319;</div>
+	       <div class="keyboard_button"   onclick="alphabet_write('&#2325;');">&#2325; </div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2326;');">&#2326; </div>
+	       <div class="keyboard_button" onclick="alphabet_write('&#2327');">&#2327;</div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2328;');">&#2328;</div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2339;');">&#2329;</div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2330;');"> &#2330;</div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2331;');">&#2331; </div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2332;');"> &#2332;</div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2333;');"> &#2333;</div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2334;');">&#2334; </div>
+	       <div class="keyboard_button"    onclick="alphabet_write('&#2335;');">&#2335; </div>
+	      
+	       <div class="keyboard_button"   onclick="alphabet_write('&#2336;');">&#2336; </div>
+	       <div class="keyboard_button" onclick="alphabet_write('&#2337');">&#2337;</div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2338;');">&#2338;</div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2339;');">&#2339;</div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2340;');"> &#2340;</div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2341;');">&#2341; </div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2342;');"> &#2342;</div>
+	       <div class="keyboard_button"   id="aaa" onclick="alphabet_write('&#2343;');"> &#2343;</div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2344;');">&#2344; </div>
+	       <div class="keyboard_button"    onclick="alphabet_write('&#2345;');">&#2345; </div>
+	       <div class="keyboard_button"   onclick="alphabet_write('&#2346;');">&#2346; </div>
+	       <div class="keyboard_button" onclick="alphabet_write('&#2347');">&#2347;</div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2348;');">&#2348;</div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2349;');">&#2349;</div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2350;');"> &#2350;</div>
+
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2351;');">&#2351; </div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2352;');"> &#2352;</div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2353;');"> &#2353;</div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2354;');">&#2354; </div>
+	       <div class="keyboard_button"   onclick="alphabet_write('&#2355;');">&#2355; </div>
+	       <div class="keyboard_button"   onclick="alphabet_write('&#2356;');">&#2356; </div>
+	       <div class="keyboard_button" onclick="alphabet_write('&#2357');">&#2357;</div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2358;');">&#2358;</div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2369;');">&#2359;</div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2360;');"> &#2360;</div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2361;');">&#2361; </div>
+	       <div class="keyboard_button"  onclick="alphabet_write('&#2384;');">&#2384;</div>
+	       <div class="keyboard_button" id="spacebar"  onclick="alphabet_write(' ');"></div>
+	       <div class="keyboard_button" onclick="keyboard_c();">&#8592;</div>
+	       <div class="keyboard_button" id="enter"  onclick="alphabet_write('\n ');">Enter</div>
+	     </div>
+
+	     
+  
+	   </div> <!-- end of chat controls div -->
+  	 
+
+
+	</div> 
+  
+     </div>
+ 
+         <script src="/socket.io/socket.io.js"></script>
+         <script src="client.js"></script>
+ <script src="keyboard.js"></script>
+     </body>
+ </html> 
